@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&display=swap');
+
+*{
+    font-family: "Cairo", sans-serif;
+}
+h1,h2 ,h3 ,h4 ,h5 ,h6{
+font-family:  "Alexandria", sans-serif;
+color: #cece02c1;
+}
+.text-hero{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/hero-img.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-logo-custom {
+  transition: filter 0.3s ease; /* تأثير ناعم أثناء التبديل */
+}
+
+/* عندما يتفعل الدارك مود على مستوى الموقع */
+[data-bs-theme="dark"] .navbar-logo-custom {
+  /* يقوم الفلتر بعكس الألوان الداكنة في الشعار لتصبح بيضاء/فاتحة تلقائياً */
+  filter: invert(1) brightness(1.5); 
+}

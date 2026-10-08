@@ -1,0 +1,117 @@
+/* الكلاس الأساسي للكارد المظلم */
+.blog-card-custom {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .blog-card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+} */
+
+
+.car-img-container-fixed {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden; 
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+.car-img-container-fixed img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.5s ease;
+}
+
+
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.5);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+
+.car-icons {
+    position: absolute;
+    top: 50%;
+    left: 100%; 
+    width: 50px;
+    height: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+    background-color: rgba(251, 251, 251, 0.2);
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    z-index: 2;
+    color: white;
+}
+
+.car-icons svg {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.car-icons svg:hover {
+    transform: scale(1.2);
+}
+
+.back-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+
+.blog-card-custom:hover .back-img {
+    left: 0;
+}
+
+.blog-card-custom:hover .car-icons {
+    left: 0;
+}
+
+.blog-card-custom:hover .back-btn {
+    bottom: 15px;
+}
+
+.blog-card-custom:hover .car-img-container-fixed img {
+    transform: scale(1.1); 
+}
+
+.text-danger {
+    color: #e63946 !important;
+}
+
+.btn-danger {
+    background-color: #e63946;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #c92a35;
+}

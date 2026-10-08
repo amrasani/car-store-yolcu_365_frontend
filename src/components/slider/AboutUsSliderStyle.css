@@ -1,0 +1,76 @@
+.hero, .about-us-slider {
+  height: 80vh; /* أو الارتفاع الثابت الذي تفضله مثلاً 500px */
+  min-height: 500px; 
+  overflow: hidden;
+}
+
+.about-us-content {
+    padding: 20px;
+}
+.about-us-content h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.about-us-image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.about-us-content h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.about-us-content p{
+    color: #fff;
+}
+
+.about-us-description{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.swiper-button-next, .swiper-button-prev {
+    background-color: red !important;
+    height: 40px;
+    border-radius: 3px !important;
+    padding: 5px 0;
+    svg {
+        color: #fff !important;
+        width: 10px; /* لون الأسهم */
+
+    } /* لون الأسهم */
+}
+@media (max-width: 768px) {
+  .hero, .about-us-slider {
+    height: auto; /* للسماح للعنصر بالتكيف مع المحتوى */
+    min-height: 300px; /* يمكنك تقليل الحد الأدنى للارتفاع للأجهزة الصغيرة */
+  }
+    .about-us-content h2 {
+        font-size: 24px;
+        text-align: center; /* تقليل حجم العنوان للأجهزة الصغيرة */
+    }
+    .about-us-content h4 {
+        font-size: 18px; /* تقليل حجم العنوان الفرعي للأجهزة الصغيرة */
+        text-align: center; /* تقليل حجم العنوان للأجهزة الصغيرة */
+    }
+    .about-us-content p {
+        font-size: 14px; /* تقليل حجم النص للأجهزة الصغيرة */
+        text-align: center; /* تقليل حجم العنوان للأجهزة الصغيرة */
+    }
+    .about-us-image img{
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: none; /* إخفاء أزرار التنقل على الأجهزة الصغيرة */
+    }
+
+}
+.swiper-pagination-bullet {
+    background-color: red !important; /* لون النقاط */
+    width: 12px !important;/* حجم النقاط */
+    height: 12px !important;
+    border-radius: 5px; /* حجم النقاط */
+
+}

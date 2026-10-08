@@ -1,0 +1,15 @@
+.details-hero { 
+  position: relative;
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    color: #fff !important; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.breadcrumb-item a:hover {
+  color: #dc3545 !important; 
+}

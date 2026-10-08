@@ -1,0 +1,45 @@
+.blog-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.blog-info {
+    background-color:#eee ;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.blog-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.blog-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #888;
+}
+.blog-info p {
+    margin: 5px 0;
+    color: #555;
+    
+}
+.blog-card-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
