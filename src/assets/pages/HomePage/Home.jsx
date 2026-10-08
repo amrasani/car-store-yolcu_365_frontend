@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../../../components/global/Navbar/Hero/Hero";
 import AboutUs from "../../../components/About Us/AboutUs";
-import Categories from "../../../components/categories/categories";
+import Categories from "../../../components/categories/Categories";
 import FeaturedCars from "../../../components/FeaturedCars/FeaturedCars";
 import MeetTheTeam from "../../../components/meetTheTeam/MeetTheTeam";
 import AboutUsSlider from "../../../components/slider/AboutUsSlider";
